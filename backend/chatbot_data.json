@@ -1,0 +1,81 @@
+{
+  "conversations": [
+    {
+        "input": "hola",
+        "alternatives": ["ola", "buenos días", "buenas tardes", "qué tal","buenas noches"],
+        "responses": ["¡Hola! Bienvenido/a a mi portfolio.👋", "Hola, ¿cómo puedo ayudarte hoy?😊"],
+        "keywords": ["hola", "saludo", "inicio"],
+        "follow_up": ["¿Quién soy?", "¿Cuál es mi experiencia laboral?", "¿Cómo fue creado este proyecto?","¿Cómo contactarme?"]
+    },
+    {
+        "input": "¿Quién sos?",
+        "alternatives": ["quién eres", "datos sobre ti","Cuéntame algo personal","matias", "matías", "sobre mi","sobre vos","contame sobre vos","personal","quien eres","quien sos","quién sos","contame un poco sobre ti","contame","personal","¿Quién sos?","¿Quién soy?","¿Quien soy?"],
+        "responses": [
+          "¡Hola! Soy <strong>Matias Trovatto</strong>. Creé este portfolio y chatbot como una forma de presentarme, mostrar mis proyectos, y darte una idea de quién soy y cómo trabajo. Si querés conocer más sobre mí, podés visitar la sección <a href='#about' style='color: #00B7B7;'target='_blank'>Sobre mí</a>",
+          "¿Cómo te va? Soy <strong>Matias Trovatto</strong>, y este portfolio con chatbot es mi forma de compartir un poco sobre mis proyectos, mi experiencia y mi estilo de trabajo. Para descubrir más detalles sobre mí, te invito a explorar la sección <a href='#about' style='color: #00B7B7;'target='_blank'>Sobre mí</a>"
+        ],
+        "keywords": ["matías", "quién eres", "personal","quién sos","sobre mi","sobre vos"],
+        "follow_up": ["¿Cuál es mi experiencia laboral?", "¿Cómo creé este proyecto?","¿Cómo contactarme?"]
+    },
+    {
+        "input": "¿Cómo creaste este proyecto?",
+        "alternatives": ["¿Cómo creé este proyecto?", "proyecto", "creado", "crear","chatbot","IA","portfolio","portafolio","creado","cómo se desarrolló"],
+        "responses":  [
+            "<strong>Este proyecto nació como una idea personal</strong> para mejorar mi antiguo portfolio, integrando las nuevas habilidades que aprendí a lo largo de mi crecimiento profesional. Lo desarrollé en mis tiempos libres, de forma autodidacta, explorando mi creatividad y aprendiendo con prueba y error.<br><br><strong>Decidí utilizar Python para el backend</strong> y HTML, CSS y JavaScript para el frontend, lo que me permitió tener libertad para decidir qué mostrar y cómo hacerlo.<br><br><strong>El chatbot es una funcionalidad sencilla pero significativa</strong> que quise agregar. Implementa TF-IDF y un modelo de deep learning para generación de respuestas. Es un primer boceto y lo considero la base para proyectos más ambiciosos y mayor aprendizaje.<br><br><strong>Este portfolio es más que un simple proyecto</strong>; es una muestra de todo lo que aprendí hasta ahora y de cómo fui creciendo como profesional. Cada línea de código y cada decisión de diseño reflejan ese proceso, y la verdad, me emociona mucho seguir explorando, aprendiendo y mejorando cada día."
+          ],
+        "keywords": ["proyecto", "portfolio", "portafolio","desarrollo","chatbot","IA"],
+        "follow_up": ["¿Cuál es mi experiencia laboral?","¿Cómo contactarme?"]
+    },
+    {
+        "input": "¿Cuál es tu experiencia laboral?",
+        "alternatives": ["experiencia laboral", "dónde has trabajado", "qué has hecho","muéstrame tu experiencia","cuál es tu experiencia laboral","laboral","experiencia","roles","rol","habilidades"],
+        "responses": [
+            "En cuanto a mi <strong>experiencia profesional</strong>, he tenido la oportunidad de desempeñarme en diversos roles relacionados con el manejo de datos.<br><br>He trabajado como <strong>Data Analyst</strong>, desarrollando dashboards, monitores y reportes interactivos para comunicar información clave de manera efectiva. También he ocupado roles como <strong>Data Engineer</strong>, donde me enfoqué en la automatización de procesos, extracción de datos y web scraping desde múltiples fuentes.<br><br>Además, he liderado proyectos de desarrollo completo de productos, abarcando desde la extracción automatizada de datos hasta su visualización en la web, incluyendo el diseño de arquitecturas de bases de datos eficientes. En el ámbito educativo, también me desempeñé como <strong>Scrum Master</strong> y corrector de proyectos, lo que me permitió aplicar metodologías ágiles y colaborar en la formación de futuros profesionales.<br><br>Puedes explorar más sobre mi experiencia revisando algunos de mis <a href='#projects' style='color: #00B7B7;'>Proyectos</a>, mi <a href='LINK DE DESCARGA' style='color: #00B7B7;' target='_blank'>CV</a> o visitando la sección <a href='#about' style='color: #00B7B7;' target='_blank'>Sobre mí</a>, donde cuento con mayor detalle mi trayectoria profesional."
+          ],
+        "keywords": ["experiencia", "historial", "laboral"],
+        "follow_up": ["¿Cómo contactarme?","¿Qué tecnologías manejo?"]
+    },
+    {
+        "input": "¿Cómo puedo contactarte?",
+        "alternatives": ["contacto", "contactarte", "contactarme", "¿Cómo contactarme?","¿Cómo contactarte?","comunicarme","cómo comunicarme","mail","email","mensaje","WhatsApp","LinkedIn" ],
+        "responses": [
+            "Puedes contactarme de la manera que te resulte más conveniente:\n\n<strong>WhatsApp</strong>: <a href='https://wa.link/cbullh' style='color: #00B7B7;'target='_blank'>Mensaje rápido</a>\n\n<strong>LinkedIn</strong>: <a href='https://www.linkedin.com/in/matias-trovatto-b33972255/' style='color: #00B7B7;'target='_blank'>Click aquí</a>\n\n<strong>Correo electrónico</strong>: <a href='mailto:trovatto.matias5@gmail.com' style='color: #00B7B7; text-decoration: underline;'>trovatto.matias5@gmail.com</a> \n\n<strong>Este portfolio</strong>: A través de la sección de <a href='#contact' style='color: #00B7B7; text-decoration: none;'>Contacto</a> en este mismo sitio"
+          ],
+        "keywords": ["contacto", "correo", "redes sociales","mail","email","mensaje","WhatsApp","LinkedIn"]
+    },
+    {
+        "input": "¿Qué tecnologías usas?",
+        "alternatives": ["tecnologías", "herramientas", "¿qué sabes manejar?","que tecnologías manejas","stack tecnológico","conocimiento técnico","tech skills","tech","tech skill"],
+        "responses": [
+            "<strong>Cuento con experiencia en una amplia gama de tecnologías enfocadas en datos.</strong> Uso <strong>Python</strong> principalmente para tareas de <strong>análisis de datos</strong>, <strong>scraping</strong>, <strong>automatización</strong> y <strong>machine learning</strong>, entre otras, y manejo bases de datos como <strong>MySQL</strong> y <strong>MongoDB</strong>. Para el desarrollo de aplicaciones web, empleo <strong>Flask</strong>, y para visualización de datos, utilizo herramientas como <strong>Power BI</strong>, <strong>Tableau</strong> y <strong>Streamlit</strong>. También tengo experiencia trabajando con grandes volúmenes de datos utilizando <strong>Apache Spark</strong> y <strong>Hadoop</strong>, así como en la creación de flujos de trabajo automatizados con <strong>Airflow</strong>.<br><br>Además, tengo conocimientos en el uso de las herramientas en la nube de <strong>Amazon Web Services (AWS)</strong> y <strong>Google Cloud Platform (GCP)</strong>.<br><br>Utilizo <strong>Figma</strong> y <strong>Canva</strong> para diseñar templates, y tengo un manejo completo del paquete <strong>Office</strong>.<br><br>Siempre estoy aprendiendo y buscando mejorar mis habilidades. En la sección de <a href='#skills' style='color: #00B7B7;'>Roles y habilidades</a> puedes ver algunas de las tecnologías y herramientas que manejo."
+          ],
+        "keywords": ["tecnologías", "herramientas", "stack tecnológico","tech skills","tech","duras"],
+        "follow_up": ["¿Cómo contactarme?","¿Cuáles son tus soft skills?"]
+    },
+    {
+        "input": "¿Cuáles son mis soft skills?",
+        "alternatives": ["contame algo de vos", "soft skill", "soft skills", "blandas"],
+        "responses": ["Destaco por mi <strong>proactividad, autonomía y capacidad de ser autodidacta</strong>, habilidades que me han permitido afrontar con éxito diversos proyectos, incluido este portafolio, el cual diseñé y desarrollé desde cero aprendiendo de manera independiente todo lo necesario.\n\n Cada desafío es una oportunidad para crecer y aportar valor, y este portafolio refleja mi capacidad para materializar ideas con iniciativa y compromiso. Te invito a conocer más <a href='#about' style='color: #00B7B7;'target='_blank'>sobre mí</a>"
+        ],
+        "keywords": ["soft skills", "contame algo de vos", "habilidades blandas"],
+        "follow_up": ["¿Cómo contactarme?","¿Cuáles son tus tech skills?"]
+    },
+    {
+      "input": "¿Por qué debería contratarte?",
+      "alternatives": ["¿Por qué contratarte?", "Razones para contratarte", "¿Qué te hace especial?", "¿Por qué eres el indicado?","trabajar","contratar","contratarme","razones"],
+      "responses": [
+            "¿Por qué deberías contratarme?\n\nSoy una persona joven, apasionada por aprender y trabajar con dedicación. Mi <strong>autonomía y capacidad autodidacta</strong> me permiten adquirir nuevas habilidades rápidamente y adaptarme con facilidad a cualquier entorno laboral.\n\nAdemás, soy <strong>responsable, detallista y busco la perfección</strong> en cada proyecto que emprendo, asegurando siempre la calidad de los resultados. Estas cualidades me convierten en un profesional confiable y motivado para aportar valor desde el primer día."
+      ],
+      "keywords": ["contratarte", "por qué", "especial", "indicado", "razones"],
+      "follow_up": ["¿Cómo contactarte?", "¿Qué habilidades técnicas tienes?", "Cuéntame sobre tu experiencia previa."]
+  }  
+    ],
+  "fallbacks": 
+     [
+      "Disculpa, no estoy seguro de entender tu pregunta. ¿Podrías reformularla?",
+      "Esa es una pregunta interesante, pero necesito más contexto para responderte adecuadamente. ¿Podrías dar más detalles?",
+      "No estoy completamente seguro de a qué te refieres. ¿Podrías explicarlo un poco más?",
+      "Hmm, creo que no tengo suficiente información para responderte. ¿Podrías ser más específico?",
+      "Perdona, no entiendo del todo. ¿Qué quisieras saber sobre contacto?"
+   ]
+}
