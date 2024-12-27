@@ -134,10 +134,10 @@ def send_email():
 # PARA EL CHATBOT
 @cache.memoize(timeout=3600)  # Cachear por 1 hora
 def load_model_and_data():
-    with open(r'C:\Users\matia\OneDrive\Desktop\Portfolio\chatbot_model.pkl', 'rb') as model_file:
+    with open("chatbot_model.pkl", 'rb') as model_file:
         model_data = pickle.load(model_file)
     
-    with open(r'C:\Users\matia\OneDrive\Desktop\Portfolio\chatbot_data.json', 'r', encoding='utf-8') as f:
+    with open('chatbot_data.json', 'r', encoding='utf-8') as f:
         training_data = json.load(f)
         
     return model_data, training_data
