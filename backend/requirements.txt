@@ -1,0 +1,16 @@
+Flask
+flask-cors
+flask-caching
+scikit-learn
+textblob
+numpy
+torch
+pandas
+requests
+Werkzeug
+Flask-WTF
+wtforms
+flask-limiter
+bleach
+email-validator
+gunicorn
