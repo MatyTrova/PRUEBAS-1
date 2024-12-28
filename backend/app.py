@@ -35,7 +35,8 @@ import random
 import re
 from functools import lru_cache
 import gunicorn
-
+# Al inicio del archivo, con los otros imports
+from tokenizer import spanish_tokenizer
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
@@ -142,16 +143,6 @@ def load_model_and_data():
         
     return model_data, training_data
 
-# Compilar las expresiones regulares una sola vez
-def spanish_tokenizer(text):
-    if not isinstance(text, str):
-        return []
-    text = text.lower()
-    text = ''.join(c for c in unicodedata.normalize('NFD', text) 
-                   if unicodedata.category(c) != 'Mn')
-    text = re.sub(r'[^\w\s]', ' ', text)
-    text = re.sub(r'\d+', '', text)
-    return text.split()
 # Función para predecir la respuesta basada en la entrada del usuario
 def predict_response(user_input):
     # Cargar el modelo entrenado
