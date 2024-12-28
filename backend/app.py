@@ -143,18 +143,15 @@ def load_model_and_data():
     return model_data, training_data
 
 # Compilar las expresiones regulares una sola vez
-WORD_PATTERN = re.compile(r'\w+')
-NUMBER_PATTERN = re.compile(r'\d+')
-
-#@lru_cache(maxsize=1000)  # Cachear los últimos 1000 inputs procesados
 def spanish_tokenizer(text):
     if not isinstance(text, str):
         return []
     text = text.lower()
     text = ''.join(c for c in unicodedata.normalize('NFD', text) 
                    if unicodedata.category(c) != 'Mn')
-    text = WORD_PATTERN.findall(text)
-    return [word for word in text if not NUMBER_PATTERN.match(word)]
+    text = re.sub(r'[^\w\s]', ' ', text)
+    text = re.sub(r'\d+', '', text)
+    return text.split()
 # Función para predecir la respuesta basada en la entrada del usuario
 def predict_response(user_input):
     # Cargar el modelo entrenado
